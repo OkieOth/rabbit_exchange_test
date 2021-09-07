@@ -1,0 +1,7 @@
+version: '3.2'
+services:
+    broker:
+        image: "rabbitmq:3.9-management-alpine"
+        ports:
+            - ${MSGBROKER_PORT}:5672
+            - ${MSGBROKER_PORT2}:15672
